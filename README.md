@@ -1,4 +1,5 @@
 # Clinical Agent System
+**Note**: Code access available on request
 
 Intended to reduce physician/nurse administrative documentation burden --
 not to diagnose or replace clinical judgment.
