@@ -1,0 +1,31 @@
+[project]
+name = "clinical-agent-system"
+version = "0.1.0"
+description = "Agentic clinical workflow: guideline RAG, nerve segmentation, EHR risk scoring, and billing-code suggestion, orchestrated over a fine-tuned T5 summarizer."
+requires-python = ">=3.12"
+dependencies = [
+    "torch",
+    "transformers",
+    "opencv-python-headless",
+    "numpy",
+    "segmentation-models-pytorch",
+    "albumentations",
+    "pandas",
+    "langgraph",
+    "langchain",
+    "langchain-core",
+    "langchain-openai",
+    "chromadb",
+    "python-dotenv",
+    "mlflow",
+    "gradio",
+    "rank-bm25>=0.2.2",
+]
+
+[tool.uv]
+package = false
+
+[dependency-groups]
+dev = [
+    "playwright>=1.62.0",
+]
